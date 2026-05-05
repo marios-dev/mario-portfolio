@@ -1,0 +1,216 @@
+﻿@page
+@using mario_portfolio.Pages
+@model IndexModel
+@{
+    Layout = null;
+    ViewData["Title"] = "Mario Syti – .NET Developer";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@300;400&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <div class="grain"></div>
+    <nav>
+        <span class="nav-logo">MS</span>
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#skills">Skills</a>
+            <a href="mailto:msyti@outlook.com" class="nav-cta">Hire me</a>
+        </div>
+    </nav>
+    <section class="hero">
+        <div class="hero-inner">
+            <div class="hero-text">
+                <p class="hero-eyebrow">Software Developer</p>
+                <h1 class="hero-name">Mario<br><em>Syti</em></h1>
+                <p class="hero-tagline">Building reliable backends in C# and .NET <br>in Copenhagen, originally from Athens.</p>
+                <div class="hero-badges">
+                    <span class="badge">.NET / C#</span>
+                    <span class="badge">ASP.NET Core</span>
+                    <span class="badge">MSSQL</span>
+                    <span class="badge">Azure</span>
+                </div>
+                <div class="hero-actions">
+                    <a href="mailto:msyti@outlook.com" class="btn-primary">Get in touch</a>
+                    <a href="https://www.linkedin.com/in/msyti" target="_blank" class="btn-ghost">LinkedIn ↗</a>
+                </div>
+            </div>
+            <img src="~/images/MarioSyti.jpg" alt="Mario Syti" class="profile-photo" />
+        </div>
+    </section>
+    <section class="about section" id="about">
+        <div class="container">
+            <div class="section-label">About</div>
+            <div class="about-grid">
+                <div class="about-text">
+                    <h2>Backend developer with a<br><em>builder's mindset.</em></h2>
+                    <p>With 3+ years of hands-on experience building ERPs, CRMs, and web applications, I specialize in clean, maintainable .NET backend, applying DDD, OOP, and clean architecture to real world business problems.</p>
+                    <p>I moved from Athens to Copenhagen in 2022, drawn by the city's culture and pace. Outside of code, I'm deep into finance, trading, and investing and I believe the same discipline that makes a good trader makes a good engineer: <em>consistency, patience, and a long term lens.</em></p>
+                </div>
+                <div class="about-facts">
+                    <div class="fact"><span class="fact-number">3+</span><span class="fact-label">Years of experience</span></div>
+                    <div class="fact"><span class="fact-number">2</span><span class="fact-label">Countries worked in</span></div>
+                    <div class="fact"><span class="fact-number">∞</span><span class="fact-label">Lines of C# written</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="copenhagen section">
+        <div class="container">
+            <div class="section-label">2022 — A new chapter</div>
+            <div class="cph-inner">
+                <div class="cph-left">
+                    <h2>From Athens<br>to <em>Copenhagen.</em></h2>
+                    <p class="cph-lead">In 2022 I made a deliberate decision to leave the familiar behind and move to one of Europe's most forward thinking cities. Not just for a job, but to catapult both my career and my personal development forward.</p>
+                    <p class="cph-body">Athens gave me my foundations: my first lines of C#, my first clients, my first real understanding of what it means to deliver software that works. But Copenhagen offered something different, a tech culture built on trust, autonomy, and craftsmanship. The kind of environment where you grow fast because the bar is simply higher.</p>
+                    <p class="cph-body">Living and working in Denmark has sharpened me in ways I didn't expect. Professionally, I stepped into a larger engineering scope at Effectmakers, full end-to-end ownership, production systems, real responsibility. Personally, I built new routines, a new city, and a clearer sense of who I am and what is my identity.</p>
+                    <p class="cph-body">That decision to move, to bet on myself is one I'd make again without hesitation. And later I did.</p>
+                </div>
+                <div class="cph-right">
+                    <div class="cph-stat-stack">
+                        <div class="cph-stat"><span class="cph-year">Athens</span><span class="cph-stat-label">Where it started</span><p>First .NET role, first clients, foundations built.</p></div>
+                        <div class="cph-arrow">↓</div>
+                        <div class="cph-stat cph-stat--highlight"><span class="cph-year">Copenhagen</span><span class="cph-stat-label">Where it levelled up</span><p>Full ownership, higher standards, personal reinvention.</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="experience section" id="experience">
+        <div class="container">
+            <div class="section-label">Experience</div>
+            <h2>Career timeline</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-meta"><span class="timeline-date">Sep 2022 – Apr 2024</span><span class="timeline-location">Copenhagen, DK</span></div>
+                    <div class="timeline-content">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card">
+                            <div class="timeline-header"><h3>Software Developer</h3><span class="company">Effectmakers</span></div>
+                            <p>
+                                Created, developed and optimized backend features in C#/.NET, improving performance across multiple ERP modules.
+                                Engaged in discussions and status meetings, contributing with solutions towards making both incremental and drastic changes in the backend.
+                                Optimized backend performance and reduced query time by up to 65% on certain modules.
+                                Maintained SQL databases, created / modified stored procedures, ensured data integrity.
+                                Created API projects on .NET 7 that automated company’s productivity.
+                            </p>
+                            <div class="timeline-tags"><span>C# / WinForms</span><span>.NET 4.8</span><span>.NET 6/7</span><span>REST APIs</span><span>Azure</span><span>Webhooks</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-meta"><span class="timeline-date">Nov 2021 – Jun 2022</span><span class="timeline-location">Athens, GR</span></div>
+                    <div class="timeline-content">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card">
+                            <div class="timeline-header"><h3>Junior .NET Developer</h3><span class="company">SSPC – Software Solution P.C.</span></div>
+                            <p>Built custom ERP solutions for clients using Epsilonnet Pylon. Developed MVC web apps in C# with Razor and Entity Framework, authored complex T-SQL reports visualized in Power BI, and handled direct client delivery.</p>
+                            <div class="timeline-tags"><span>C# / WinForms</span><span>ASP.NET MVC</span><span>T-SQL</span><span>Power BI</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="skills section" id="skills">
+        <div class="container">
+            <div class="section-label">Skills</div>
+            <h2>Tech stack</h2>
+            <div class="skills-grid">
+                <div class="skill-group">
+                    <div class="skill-group-label">Languages & Frameworks</div>
+                    <div class="skill-list">
+                        <div class="skill-item"><span class="skill-dot"></span>C#</div>
+                        <div class="skill-item"><span class="skill-dot"></span>ASP.NET Core (MVC, Web API)</div>
+                        <div class="skill-item"><span class="skill-dot"></span>.NET 4.8 / 6 / 7 / 8 / 9</div>
+                        <div class="skill-item"><span class="skill-dot"></span>Razor Pages</div>
+                        <div class="skill-item"><span class="skill-dot"></span>Entity Framework</div>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <div class="skill-group-label">Data & Cloud</div>
+                    <div class="skill-list">
+                        <div class="skill-item"><span class="skill-dot"></span>MSSQL / T-SQL</div>
+                        <div class="skill-item"><span class="skill-dot"></span>Azure (VMs, Repos, Portal)</div>
+                        <div class="skill-item"><span class="skill-dot"></span>Power BI</div>
+                        <div class="skill-item"><span class="skill-dot"></span>REST APIs & Webhooks</div>
+                        <div class="skill-item"><span class="skill-dot"></span>JSON / OData</div>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <div class="skill-group-label">Architecture & Practices</div>
+                    <div class="skill-list">
+                        <div class="skill-item"><span class="skill-dot"></span>Domain-Driven Design (DDD)</div>
+                        <div class="skill-item"><span class="skill-dot"></span>Clean Architecture</div>
+                        <div class="skill-item"><span class="skill-dot"></span>OOP</div>
+                        <div class="skill-item"><span class="skill-dot"></span>Git / GitHub / Azure Repos</div>
+                        <div class="skill-item"><span class="skill-dot"></span>Agile / Scrum</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="education section">
+        <div class="container">
+            <div class="section-label">Education</div>
+            <h2>Background</h2>
+            <div class="edu-grid">
+                <div class="edu-item"><span class="edu-year">2020 – 2021</span><div><h3>Full Stack C# Developer</h3><p>PeopleCert Education</p></div></div>
+                <div class="edu-item"><span class="edu-year">2011 – 2013</span><div><h3>Engineer's Degree, Automotive Technology</h3><p>IEK Athens</p></div></div>
+            </div>
+        </div>
+    </section>
+    <section class="hobbies section">
+        <div class="container">
+            <div class="section-label">Beyond the code</div>
+            <h2>What I'm into</h2>
+            <div class="hobbies-grid">
+                <div class="hobby-card">
+                    <div class="hobby-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2" /><path d="M8 9h2m4 0h2M10 9v2M10 11H8M17 12h-2" /></svg></div>
+                    <h3>Gaming</h3>
+                    <p>Winter ritual. Immersive worlds and strategy games, the kind that demand focus and reward patience.</p>
+                </div>
+                <div class="hobby-card">
+                    <div class="hobby-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10" /><path d="M12 2a14.5 14.5 0 0 0 0 20M12 2a14.5 14.5 0 0 1 0 20M2 12h20" /><path d="M4.5 7.5c3.5 1 7 1.5 7.5 4.5s-3.5 5-5 7" /><path d="M19.5 7.5c-3.5 1-7 1.5-7.5 4.5s3.5 5 5 7" /></svg></div>
+                    <h3>Football</h3>
+                    <p>Summer staple. Playing and following the game, team dynamics on the pitch mirror those in engineering.</p>
+                </div>
+                <div class="hobby-card">
+                    <div class="hobby-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" /><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" /></svg></div>
+                    <h3>Reading</h3>
+                    <p>Mostly finance and investing books, understanding markets, human behaviour, global liquidity and the long patient game.</p>
+                </div>
+                <div class="hobby-card hobby-card--accent">
+                    <div class="hobby-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17" /><polyline points="16 7 22 7 22 13" /></svg></div>
+                    <h3>Finance & Trading</h3>
+                    <p>Active study of markets, macro trends, and trading psychology. Discipline, systems thinking, emotion control and risk management. Principles that have leveled my mental game.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="footer-inner">
+                <div><p class="footer-name">Mario Syti</p><p class="footer-sub">Open to new opportunities in Copenhagen and remotely.</p></div>
+                <div class="footer-links">
+                    <a href="mailto:msyti@outlook.com">msyti@outlook.com</a>
+                    <a href="tel:+4531887322">+45 31 88 73 22</a>
+                    <a href="https://www.linkedin.com/in/msyti" target="_blank">LinkedIn ↗</a>
+                    <a href="https://linktr.ee/msyti" target="_blank">Linktree ↗</a>
+                </div>
+            </div>
+            <div class="footer-bottom"><span>© @DateTime.Now.Year Mario Syti</span></div>
+        </div>
+    </footer>
+    <script src="~/js/site.js"></script>
+</body>
+</html>
